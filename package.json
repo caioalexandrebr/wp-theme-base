@@ -1,0 +1,18 @@
+{
+  "name": "Wordpress Theme Base",
+  "version": "1.0.0",
+  "description": "wp-theme-base",
+  "author": "Caio Alexandre <caioalexandre.br@hotmail.com>",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "require-dir": "^0.3.2"
+  }
+}

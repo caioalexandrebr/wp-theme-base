@@ -1,0 +1,32 @@
+/*
+ * 
+ * Site > Footer
+ * 
+ */
+
+/* MOBILE STYLES ------------------------------------------------------------*/
+
+.footer {
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    bottom: 0;
+    height: 120px; // Height do footer, ajustar no _site-base.scss
+    width: 100%;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

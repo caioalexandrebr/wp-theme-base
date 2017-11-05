@@ -1,0 +1,36 @@
+/*
+ * 
+ * Modules > Inputs
+ * 
+ */
+
+/* MOBILE STYLES ------------------------------------------------------------*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+input[type=text]:focus {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #555;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

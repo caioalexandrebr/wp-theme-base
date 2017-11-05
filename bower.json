@@ -1,0 +1,21 @@
+{
+  "name": "Wordpress Theme Base",
+  "authors": [
+    "Caio Alexandre <caioalexandre.br@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/caioalexandrebr/wp-theme-base",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "mdi": "^2.0.46"
+  }
+}

@@ -1,0 +1,31 @@
+/*
+ * 
+ * Site > Base
+ * 
+ */
+
+/* MOBILE STYLES ------------------------------------------------------------*/
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px; // Height do Footer
+    background-color: $white;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}
