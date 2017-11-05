@@ -5,14 +5,6 @@ Boilperplate wordpress utilizando Bootstrap, Material Design Icons, Gulp, Bower 
 ## Começando
 Estas instruções irão levá-lo a uma cópia do projeto em funcionamento em sua máquina local para fins de desenvolvimento e teste. Consulte as notas sobre como implantar o projeto em seu sistema.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ## Instalação
 #### 1 - Clonar Repositório
 ```
@@ -31,14 +23,18 @@ npm install
 
 ## Rodando o Gulp
 #### 1 - gulp (default)
-1 - Compila os arquivos SCSS
-2 - Copia e Agrupa os arquivos javascripts: bootstrap.min.js e jquery.min.js p/ o destino project/js/all,js
+1.1 - Compila os arquivos SCSS
+
+
+1.2 - Copia e Agrupa os arquivos javascripts: bootstrap.min.js e jquery.min.js p/ o destino project/js/all,js
 ```
 gulp
 ```
 #### 1 - gulp (watch)
-1 - Compila os arquivos SCSS
-2 - Inicializa o servidor PHP (Refresh automático no navegador ao salvar)
+1.1 - Compila os arquivos SCSS
+
+
+1.2 - Inicializa o servidor PHP (Refresh automático no navegador ao salvar)
 ```
 gulp watch
 ```
