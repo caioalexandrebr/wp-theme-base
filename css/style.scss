@@ -10,6 +10,7 @@ Project: Wordpress Theme Base
 Project date: xx/xx/xxxxx (Início) - xx/xx/xxxx(Término)
 */
 
+// Bootstrap Libsass  -----------------------------------------------------------
 // // Core variables and mixins
 @import "libs/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -60,21 +61,24 @@ Project date: xx/xx/xxxxx (Início) - xx/xx/xxxx(Término)
 // Utility classes
 @import "libs/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-// -----------------------------------------------------------------------------------------------
+// End Bootstrap Libsass  -------------------------------------------------------
+
+// MDI --------------------------------------------------------------------------
+@import "libs/mdi/css/materialdesignicons.min.css";
+// END MDI ----------------------------------------------------------------------
 
 // Modules
-@import "css/sass/modules/_variables";
-@import "css/sass/modules/_buttons";
-@import "css/sass/modules/_colors";
-@import "css/sass/modules/_fonts";
-@import "css/sass/modules/_inputs";
-@import "css/sass/modules/_mixins";
-@import "css/sass/modules/_titles";
-
+@import "css/sass/modules/variables";
+@import "css/sass/modules/buttons";
+@import "css/sass/modules/colors";
+@import "css/sass/modules/fonts";
+@import "css/sass/modules/inputs";
+@import "css/sass/modules/mixins";
+@import "css/sass/modules/titles";
 
 // Site
-@import "css/sass/site/_site-base";
-@import "css/sass/site/_site-footer";
-@import "css/sass/site/_site-header";
-@import "css/sass/site/_site-nav";
-@import "css/sass/site/_site-sidebar";
+@import "css/sass/site/site-base";
+@import "css/sass/site/site-footer";
+@import "css/sass/site/site-header";
+@import "css/sass/site/site-nav";
+@import "css/sass/site/site-sidebar";
