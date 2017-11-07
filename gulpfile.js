@@ -4,7 +4,8 @@ plumber = require('gulp-plumber'),
 browserSync = require('browser-sync').create(),
 reload = browserSync.reload,
 concat = require('gulp-concat'),
-uglify = require('gulp-uglify');
+uglify = require('gulp-uglify'),
+rename = require("gulp-rename");
 
 // Sass --------------------------------------------
 gulp.task('sass', function() {
@@ -40,24 +41,31 @@ gulp.task('browserSync', function() {
     });
 });
 
-// Copy and Contat Javascripts --------------------------------------------
-gulp.task('copy-libs', function () {
+// Copy > Concat > Compress --------------------------------------------
+gulp.task('copy-libs', function () { // Copy
     gulp.src(['./libs/bootstrap-sass/assets/javascripts/bootstrap.min.js', './libs/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('./js/lib/'));
 });
-gulp.task('contat-libs', function() {
+gulp.task('contat-libs', function() { // Concat
     return gulp.src('./js/lib/*.js')
       .pipe(concat('all.js'))
       .pipe(gulp.dest('./js/'));
 });
+gulp.task('compress-libs', function () { // Compress
+    gulp.src(['js/all.js', 'js/scripts.js'])
+      .pipe(uglify())
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(gulp.dest('js'))
+})
 
 // GULP TASKS --------------------------------------------
 
 // Gulp Default
 gulp.task('watch', ['browserSync', 'sass'], function(){
     gulp.watch('./**/*.scss', ['sass']);
+    console.log( 'Success!' );
 })
 // Gulp Sass
-gulp.task('default', ['sass', 'copy-libs', 'contat-libs'], function() {
-    console.log( 'Feito!' );
+gulp.task('default', ['sass', 'copy-libs', 'contat-libs', 'compress-libs'], function() {
+    console.log( 'Success!' );
 });
