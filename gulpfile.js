@@ -41,21 +41,17 @@ gulp.task('browserSync', function() {
     });
 });
 
-// Copy > Concat > Compress --------------------------------------------
-gulp.task('copy-libs', function () { // Copy
-    gulp.src(['./libs/bootstrap-sass/assets/javascripts/bootstrap.min.js', './libs/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('./js/lib/'));
-});
+// Concat > Compress --------------------------------------------
 gulp.task('contat-libs', function() { // Concat
-    return gulp.src('./js/lib/*.js')
-      .pipe(concat('all.js'))
+    gulp.src(['./js/scripts.js', './libs/bootstrap-sass/assets/javascripts/bootstrap.min.js', './libs/jquery/dist/jquery.min.js'])
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('./js/'));
 });
 gulp.task('compress-libs', function () { // Compress
-    gulp.src(['js/all.js', 'js/scripts.js'])
+    gulp.src('js/main.js')
       .pipe(uglify())
       .pipe(rename({ suffix: '.min' }))
-      .pipe(gulp.dest('js'))
+      .pipe(gulp.dest('./js/'))
 })
 
 // GULP TASKS --------------------------------------------
@@ -66,6 +62,6 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
     console.log( 'Success!' );
 })
 // Gulp Sass
-gulp.task('default', ['sass', 'copy-libs', 'contat-libs', 'compress-libs'], function() {
+gulp.task('default', ['sass', 'contat-libs', 'compress-libs'], function() {
     console.log( 'Success!' );
 });
