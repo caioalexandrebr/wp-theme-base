@@ -4,3 +4,4 @@ node_modules
 libs
 .idea
 package-lock.json
+style.css
